@@ -73,7 +73,10 @@
                     
                     <div class="intro-buttons">
                         <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-code"></i> View Projects
+                            <i class="fas fa-rocket"></i> View Projects
+                        </a>
+                        <a href="#tools" class="btn btn-primary">
+                            <i class="fas fa-tools"></i> View Tools
                         </a>
                         <a href="#contact" class="btn btn-outline">
                             <i class="fas fa-envelope"></i> Contact Me
@@ -218,9 +221,9 @@
             </div>
         </section>
 
-        <!-- Technical Projects -->
+        <!-- Real Projects -->
         <section id="projects">
-            <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
+            <h2><i class="fas fa-rocket"></i> Production Projects</h2>
             <div class="portfolio-grid">
                 <!-- Project 1: React CI/CD with AWS -->
                 <div class="portfolio-item">
@@ -230,14 +233,15 @@
                     </div>
                     <div class="portfolio-details">
                         <h3>CI/CD Pipeline for React App using AWS</h3>
-                        <p><strong>Challenge:</strong> Manual deployments were causing frequent failures and inconsistencies for a React application, leading to downtime and delayed releases. Need for reliable, automated deployment process with zero-downtime updates.</p>
-                        
-                        <p><strong>Solution:</strong> Built automated CI/CD pipeline using AWS CodePipeline, CodeBuild, and CloudFormation with blue/green deployment strategy. Implemented automated testing, Docker containerization, and infrastructure as code. <strong>Result:</strong> Reduced deployment failures by 60% and eliminated manual deployment risks.</p>
+                        <p><strong>Challenge:</strong> Manual deployments causing frequent failures and downtime for React application.</p>
+                        <p>Built automated CI/CD pipeline using AWS CodeBuild, S3, and CloudFront with automated testing and zero-downtime deployments. <strong>Result:</strong> Reduced deployment failures by 60% and eliminated manual deployment risks.</p>
                         <div class="tech-stack">
-                            <span class="tech-item">AWS CodePipeline</span>
-                            <span class="tech-item">Docker</span>
-                            <span class="tech-item">GitLab CI/CD</span>
-                            <span class="tech-item">CloudFormation</span>
+                            <span class="tech-item">AWS CodeBuild</span>
+                            <span class="tech-item">AWS S3</span>
+                            <span class="tech-item">AWS CloudFront</span>
+                            <span class="tech-item">AWS SNS</span>
+                            <span class="tech-item">React + Vite</span>
+                            <span class="tech-item">GitHub</span>
                         </div>
                         <div class="project-actions">
                             <a href="https://github.com/oyebiyisunday/React-cicd-aws" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> View Code</a>
@@ -254,14 +258,14 @@
                     </div>
                     <div class="portfolio-details">
                         <h3>WordPress Migration to AWS</h3>
-                        <p><strong>Challenge:</strong> WordPress site on shared hosting was experiencing performance issues, security vulnerabilities, and limited scalability. Needed migration to cloud infrastructure with improved security and monitoring.</p>
-                        
-                        <p><strong>Solution:</strong> Migrated WordPress from shared hosting to AWS using EC2, RDS, and S3. Implemented SSL certificates, automated backup strategies, and CloudWatch monitoring for comprehensive performance tracking. <strong>Result:</strong> Achieved scalable, secure hosting with 99.9% uptime and improved site performance.</p>
+                        <p><strong>Challenge:</strong> WordPress site experiencing performance issues and security vulnerabilities on shared hosting.</p>
+                        <p>Migrated WordPress from shared hosting to AWS using EC2, RDS, and S3. Implemented SSL certificates, automated backups, and CloudWatch monitoring. <strong>Result:</strong> Achieved 99.9% uptime and improved performance.</p>
                         <div class="tech-stack">
                             <span class="tech-item">AWS EC2</span>
-                            <span class="tech-item">RDS</span>
-                            <span class="tech-item">S3</span>
-                            <span class="tech-item">Route 53</span>
+                            <span class="tech-item">Amazon RDS</span>
+                            <span class="tech-item">AWS S3</span>
+                            <span class="tech-item">AWS Route 53</span>
+                            <span class="tech-item">CloudWatch</span>
                             <span class="tech-item">Let's Encrypt</span>
                         </div>
                         <div class="project-actions">
@@ -270,98 +274,7 @@
                     </div>
                 </div>
 
-                <!-- Project 3: AWS CLI Automation -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image cli-project">
-                        <i class="fas fa-terminal" style="font-size: 4rem; color: white;"></i>
-                        <div class="project-label">AWS CLI Automation</div>
-                    </div>
-                    <div class="portfolio-details">
-                        <h3>AWS Resource Management Automation</h3>
-                        <p><strong>Challenge:</strong> Manual AWS resource provisioning and cleanup was time-consuming, error-prone, and inconsistent across environments. Development teams needed reliable automation for repetitive infrastructure tasks.</p>
-                        
-                        <p><strong>Solution:</strong> Developed comprehensive shell scripts for AWS resource provisioning and cleanup using AWS CLI and CloudFormation. Implemented error handling, logging, and standardized resource tagging. <strong>Result:</strong> Reduced manual effort by 40% and eliminated configuration drift across environments.</p>
-                        <div class="tech-stack">
-                            <span class="tech-item">AWS CLI</span>
-                            <span class="tech-item">Bash Scripting</span>
-                            <span class="tech-item">IAM</span>
-                            <span class="tech-item">CloudFormation</span>
-                        </div>
-                        <div class="project-actions">
-                            <button class="btn btn-outline" onclick="openGallery('project7')"><i class="fas fa-images"></i> View Gallery</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: API Traffic Flowchart -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image api-flowchart-project">
-                        <i class="fas fa-chart-line" style="font-size: 4rem; color: white;"></i>
-                        <div class="project-label">API Traffic Flowchart</div>
-                    </div>
-                    <div class="portfolio-details">
-                        <h3>API Traffic Flowchart for AWS Services</h3>
-                        <p><strong>Problem:</strong> A startup needs to deploy an API backend with unpredictable traffic, sometimes spiking to thousands of requests per second. Designed comprehensive comparison flowchart analyzing Lambda vs. Fargate vs. EC2 deployment paths with shared frontend (Route 53 + API Gateway/ALB) and annotated key trade-offs.</p>
-                        
-                        <p><strong>Solution:</strong> Created detailed architecture flowchart comparing three deployment paths with shared frontend infrastructure. Analyzed cost efficiency (Lambda: $1.50/1M requests vs EC2: $121/month idle), scalability performance (Lambda: <1s scaling vs Fargate: 30-60s), cold start mitigation (500ms manageable with Provisioned Concurrency), and operational overhead reduction. <strong>Analysis Result:</strong> Selected Lambda serverless architecture as the optimal choice for cost-performance ratio with unpredictable workloads.</p>
-                        
-                        <div style="margin: 15px 0; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 5px; font-size: 0.9em;">
-                            <strong>Key Findings:</strong><br>
-                            • <strong>Cost:</strong> Lambda wins (~$1.50 for 1M requests vs $121/month EC2 idle cost)<br>
-                            • <strong>Scalability:</strong> Lambda scales to thousands of executions in <1s vs 30-60s for Fargate<br>
-                            • <strong>Cold Starts:</strong> 500ms Lambda cold starts manageable with Provisioned Concurrency<br>
-                            • <strong>Operations:</strong> Lambda eliminates infrastructure management overhead
-                        </div>
-                        
-                        <div class="tech-stack">
-                            <span class="tech-item">AWS Lambda</span>
-                            <span class="tech-item">AWS Fargate</span>
-                            <span class="tech-item">EC2 Auto Scaling</span>
-                            <span class="tech-item">API Gateway</span>
-                            <span class="tech-item">Application Load Balancer</span>
-                            <span class="tech-item">Cost Analysis</span>
-                        </div>
-                        <div class="project-actions">
-                            <button class="btn btn-outline" onclick="openGallery('project9')"><i class="fas fa-images"></i> View Gallery</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Global Latency Optimization -->
-                <div class="portfolio-item">
-                    <div class="portfolio-image global-latency-project">
-                        <i class="fas fa-server" style="font-size: 4rem; color: white;"></i>
-                        <div class="project-label">Global Latency Optimization</div>
-                    </div>
-                    <div class="portfolio-details">
-                        <h3>AWS Services for Global Latency Optimization</h3>
-                        <p><strong>Problem:</strong> A SaaS app with users in US, Europe, and Asia needs to ensure low latency and high availability globally. Analyzed trade-offs between Route 53, CloudFront, and Global Accelerator for optimal global performance.</p>
-                        
-                        <p><strong>Solution:</strong> Designed comprehensive multi-service architecture combining CloudFront for static/API caching, Global Accelerator for dynamic TCP connections, and Route 53 for failover + regional control. Created performance comparison analysis showing route optimization benefits and regional endpoint strategies.</p>
-                        
-                        <div style="margin: 15px 0; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 5px; font-size: 0.9em;">
-                            <strong>Service Analysis:</strong><br>
-                            • <strong>Route 53:</strong> DNS-based geolocation routing, simple regional control<br>
-                            • <strong>CloudFront:</strong> Edge caching + TLS termination, ideal for static/API content<br>
-                            • <strong>Global Accelerator:</strong> AWS edge network routing, 60% latency improvement for TCP<br>
-                            • <strong>Selected Approach:</strong> Hybrid solution implemented for mission-critical performance
-                        </div>
-                        
-                        <div class="tech-stack">
-                            <span class="tech-item">AWS Route 53</span>
-                            <span class="tech-item">Amazon CloudFront</span>
-                            <span class="tech-item">AWS Global Accelerator</span>
-                            <span class="tech-item">Application Load Balancer</span>
-                            <span class="tech-item">Multi-Region Architecture</span>
-                            <span class="tech-item">Performance Optimization</span>
-                        </div>
-                        <div class="project-actions">
-                            <button class="btn btn-outline" onclick="openGallery('project10')"><i class="fas fa-images"></i> View Gallery</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: E-commerce Database Architecture -->
+                <!-- Project 3: E-commerce Database Architecture -->
                 <div class="portfolio-item">
                     <div class="portfolio-image ecommerce-project">
                         <i class="fas fa-store" style="font-size: 4rem; color: white;"></i>
@@ -369,16 +282,11 @@
                     </div>
                     <div class="portfolio-details">
                         <h3>Optimized E-commerce Architecture for MOYO</h3>
-                        <p><strong>Challenge:</strong> Building a product catalog and order database for an e-commerce site (MOYO) requiring high availability, read scaling, and consistent response times under load. Applied AWS Well-Architected framework for optimal database selection.</p>
+                        <p><strong>Challenge:</strong> Building scalable e-commerce database requiring high availability and consistent response times under load.</p>
+                        <p>Designed hybrid database architecture using Aurora for transactional data and DynamoDB for high-velocity data. Applied AWS Well-Architected framework for optimal performance, reliability, and cost optimization.</p>
                         
-                        <p><strong>Solution:</strong> Designed hybrid database architecture using Aurora for transactional data requiring ACID compliance and DynamoDB for high-velocity data. Analyzed performance trade-offs across RDS, Aurora, and DynamoDB based on operational excellence, performance efficiency, reliability, and cost optimization pillars.</p>
-                        
-                        <div style="margin: 15px 0; padding: 10px; background: rgba(255,255,255,0.1); border-radius: 5px; font-size: 0.9em;">
-                            <strong>AWS Well-Architected Analysis:</strong><br>
-                            • <strong>Performance:</strong> DynamoDB (single-digit ms), Aurora (5x better than RDS MySQL)<br>
-                            • <strong>Reliability:</strong> Aurora <30s failover vs RDS 1-2min, DynamoDB cross-region replication<br>
-                            • <strong>Cost:</strong> RDS for small workloads, Aurora for scale, DynamoDB pay-per-request<br>
-                            • <strong>Best Practice:</strong> Hybrid model for optimal performance and compliance
+                        <div style="margin: 10px 0; padding: 8px; background: rgba(255,255,255,0.1); border-radius: 5px; font-size: 0.85em;">
+                            <strong>Key Results:</strong> Aurora 5x better performance than RDS MySQL • DynamoDB single-digit ms latency • <30s failover vs 1-2min RDS
                         </div>
                         
                         <div class="tech-stack">
@@ -390,30 +298,91 @@
                             <span class="tech-item">Well-Architected Framework</span>
                         </div>
                         <div class="project-actions">
-                            <button class="btn btn-outline" onclick="openGallery('project11')"><i class="fas fa-images"></i> View Gallery</button>
+                            <a href="#" class="btn btn-outline" onclick="alert('Database architecture diagrams and Well-Architected analysis documentation available upon request')"><i class="fas fa-file-alt"></i> View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Architecture Analysis -->
+        <section id="tools">
+            <h2><i class="fas fa-tools"></i> Tools & Architecture Analysis</h2>
+            <div class="portfolio-grid">
+                <!-- Tool 1: AWS CLI Automation -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image cli-project">
+                        <i class="fas fa-terminal" style="font-size: 4rem; color: white;"></i>
+                        <div class="project-label">Automation Tool</div>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>AWS Resource Management Automation</h3>
+                        <p>Developed comprehensive shell scripts for AWS resource provisioning and cleanup using AWS CLI and CloudFormation. Implemented error handling, logging, and standardized resource tagging. <strong>Result:</strong> Reduced manual effort by 40%.</p>
+                        <div class="tech-stack">
+                            <span class="tech-item">AWS CLI</span>
+                            <span class="tech-item">Bash Scripting</span>
+                            <span class="tech-item">AWS IAM</span>
+                            <span class="tech-item">CloudFormation</span>
+                            <span class="tech-item">Terraform</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-outline" onclick="openGallery('project7')"><i class="fas fa-images"></i> View Gallery</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 7: S3 Bucket Management -->
+                <!-- Tool 2: API Traffic Flowchart -->
                 <div class="portfolio-item">
-                    <div class="portfolio-image s3-project">
-                        <i class="fas fa-cloud-upload-alt" style="font-size: 4rem; color: white;"></i>
-                        <div class="project-label">S3 Security</div>
+                    <div class="portfolio-image api-flowchart-project">
+                        <i class="fas fa-chart-line" style="font-size: 4rem; color: white;"></i>
+                        <div class="project-label">Architecture Analysis</div>
                     </div>
                     <div class="portfolio-details">
-                        <h3>S3 Security & Cost Optimization</h3>
-                        <p><strong>Challenge:</strong> Organization's S3 storage costs were increasing rapidly with inconsistent security policies and compliance gaps. Need for automated governance and cost control across multiple buckets.</p>
+                        <h3>API Traffic Flowchart for AWS Services</h3>
+                        <p>Created detailed architecture flowchart analyzing Lambda vs. Fargate vs. EC2 deployment paths for unpredictable API traffic. Analyzed cost efficiency, scalability performance, and operational overhead.</p>
                         
-                        <p><strong>Solution:</strong> Implemented automated S3 bucket management with security policies, compliance checks, and intelligent lifecycle policies. Deployed Lambda functions for continuous monitoring and CloudTrail for audit logging. <strong>Result:</strong> Reduced storage costs by 25% while achieving full compliance and security standardization.</p>
+                        <div style="margin: 10px 0; padding: 8px; background: rgba(255,255,255,0.1); border-radius: 5px; font-size: 0.85em;">
+                            <strong>Analysis Result:</strong> Lambda optimal for cost ($1.50/1M requests vs $121/month EC2) • <1s scaling vs 30-60s Fargate
+                        </div>
+                        
                         <div class="tech-stack">
-                            <span class="tech-item">AWS S3</span>
-                            <span class="tech-item">CloudTrail</span>
-                            <span class="tech-item">AWS Config</span>
-                            <span class="tech-item">Lambda</span>
+                            <span class="tech-item">AWS Lambda</span>
+                            <span class="tech-item">AWS Fargate</span>
+                            <span class="tech-item">Amazon EC2</span>
+                            <span class="tech-item">API Gateway</span>
+                            <span class="tech-item">AWS ALB</span>
+                            <span class="tech-item">Cost Analysis</span>
                         </div>
                         <div class="project-actions">
-                            <button class="btn btn-outline" onclick="openGallery('project8')"><i class="fas fa-images"></i> View Gallery</button>
+                            <a href="#" class="btn btn-outline" onclick="alert('Architecture diagrams and analysis documentation available upon request')"><i class="fas fa-file-alt"></i> View Analysis</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tool 3: Global Latency Optimization -->
+                <div class="portfolio-item">
+                    <div class="portfolio-image global-latency-project">
+                        <i class="fas fa-server" style="font-size: 4rem; color: white;"></i>
+                        <div class="project-label">Performance Analysis</div>
+                    </div>
+                    <div class="portfolio-details">
+                        <h3>AWS Services for Global Latency Optimization</h3>
+                        <p>Designed comprehensive multi-service architecture combining CloudFront for static/API caching, Global Accelerator for dynamic TCP connections, and Route 53 for failover and regional control.</p>
+                        
+                        <div style="margin: 10px 0; padding: 8px; background: rgba(255,255,255,0.1); border-radius: 5px; font-size: 0.85em;">
+                            <strong>Performance Results:</strong> CloudFront edge caching • Global Accelerator 60% latency improvement • Route 53 geolocation routing
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-item">AWS Route 53</span>
+                            <span class="tech-item">Amazon CloudFront</span>
+                            <span class="tech-item">AWS Global Accelerator</span>
+                            <span class="tech-item">AWS ALB</span>
+                            <span class="tech-item">Multi-Region</span>
+                            <span class="tech-item">Performance Optimization</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-outline" onclick="alert('Performance optimization reports and analysis documentation available upon request')"><i class="fas fa-file-alt"></i> View Analysis</a>
                         </div>
                     </div>
                 </div>
