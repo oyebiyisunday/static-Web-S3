@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title id="page-title">Portfolio Details - SnapFolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jul 21 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 id="project-title" class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li id="breadcrumb-current" class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div id="project-images" class="swiper-wrapper align-items-center">
+                <!-- Images will be dynamically loaded here -->
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3 id="info-title">Project Information</h3>
+              <ul id="project-info-list">
+                <!-- Project info will be dynamically loaded here -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2 id="description-title">Project Overview</h2>
+              <div id="description-content">
+                <!-- Description will be dynamically loaded here -->
+              </div>
+
+              <div class="features mt-4">
+                <h3 id="features-title">Key Features</h3>
+                <div id="features-content" class="row gy-3">
+                  <!-- Features will be dynamically loaded here -->
+                </div>
+              </div>
+
+              <!-- Architecture Section -->
+              <div id="architecture-section" class="architecture mt-5">
+                <h3 id="architecture-title">Architecture & Analysis</h3>
+                
+                <div class="architecture-content">
+                  <div id="architecture-diagram" class="mb-4">
+                    <!-- Architecture diagram will be dynamically loaded here -->
+                  </div>
+
+                  <div class="trade-offs mb-4">
+                    <h4>Trade-off Analysis</h4>
+                    <div id="trade-offs-content" class="accordion">
+                      <!-- Trade-offs will be dynamically loaded here -->
+                    </div>
+                  </div>
+
+                  <div class="row gy-4">
+                    <div class="col-md-4">
+                      <div class="architecture-feature">
+                        <h5><i class="bi bi-shield-check"></i> Security Features</h5>
+                        <ul id="security-features">
+                          <!-- Security features will be dynamically loaded here -->
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                      <div class="architecture-feature">
+                        <h5><i class="bi bi-speedometer2"></i> Performance</h5>
+                        <ul id="performance-optimizations">
+                          <!-- Performance optimizations will be dynamically loaded here -->
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                      <div class="architecture-feature">
+                        <h5><i class="bi bi-currency-dollar"></i> Cost Optimization</h5>
+                        <ul id="cost-optimization">
+                          <!-- Cost optimization will be dynamically loaded here -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sunday Oyebiyi</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed with <i class="bi bi-heart-fill text-danger"></i> <a href="https://bootstrapmade.com/">Love</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Portfolio Data -->
+  <script src="assets/js/portfolio-data.js"></script>
+  
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Portfolio Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get project parameter from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const projectType = urlParams.get('project') || 'react';
+      
+      // Get project data
+      const project = portfolioData[projectType];
+      
+      if (!project) {
+        console.error('Project not found:', projectType);
+        return;
+      }
+      
+      // Update page title and meta
+      document.getElementById('page-title').textContent = `${project.title} - Portfolio Details`;
+      document.getElementById('project-title').textContent = project.title;
+      document.getElementById('breadcrumb-current').textContent = project.title;
+      
+      // Update project info
+      document.getElementById('info-title').textContent = `${project.title} Information`;
+      const infoList = document.getElementById('project-info-list');
+      
+      // Build info list conditionally
+      let infoHTML = `
+        <li><strong>Category</strong>: ${project.category}</li>
+        <li><strong>Technologies</strong>: ${project.technologies.join(', ')}</li>
+        <li><strong>Deployment Platform</strong>: ${project.deploymentPlatform}</li>
+        <li><strong>Project Status</strong>: ${project.status}</li>
+      `;
+      
+      // Only add GitHub line if githubText exists and githubUrl exists
+      if (project.githubText && project.githubUrl) {
+        infoHTML += `<li><strong>GitHub</strong>: <a href="${project.githubUrl}" target="_blank">${project.githubText}</a></li>`;
+      }
+      
+      infoList.innerHTML = infoHTML;
+      
+      // Update images
+      const imagesContainer = document.getElementById('project-images');
+      imagesContainer.innerHTML = project.images.map(image => `
+        <div class="swiper-slide">
+          <img src="${image.src}" alt="${image.alt}" class="img-fluid" loading="lazy">
+        </div>
+      `).join('');
+      
+      // Update description
+      document.getElementById('description-title').textContent = `${project.title} Portfolio`;
+      document.getElementById('description-content').innerHTML = `
+        <p>${project.description.main}</p>
+        <p>${project.description.secondary}</p>
+      `;
+      
+      // Update features
+      document.getElementById('features-title').textContent = `${project.title} Features`;
+      const featuresContainer = document.getElementById('features-content');
+      featuresContainer.innerHTML = project.features.map((feature, index) => `
+        <div class="col-md-6">
+          <div class="feature-item" data-aos="fade-up" data-aos-delay="${400 + (index * 100)}">
+            <i class="bi ${feature.icon}"></i>
+            <h4>${feature.title}</h4>
+            <p>${feature.description}</p>
+          </div>
+        </div>
+      `).join('');
+      
+      // Update architecture section if available
+      if (project.architecture) {
+        document.getElementById('architecture-title').textContent = project.architecture.title;
+        document.getElementById('architecture-diagram').innerHTML = project.architecture.diagram;
+        
+        // Trade-offs accordion
+        const tradeOffsContainer = document.getElementById('trade-offs-content');
+        tradeOffsContainer.innerHTML = project.architecture.tradeOffs.map((tradeOff, index) => `
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button ${index === 0 ? '' : 'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${index}" aria-expanded="${index === 0}">
+                ${tradeOff.decision}: ${tradeOff.chosen} vs ${tradeOff.alternative}
+              </button>
+            </h2>
+            <div id="collapse-${index}" class="accordion-collapse collapse ${index === 0 ? 'show' : ''}" data-bs-parent="#trade-offs-content">
+              <div class="accordion-body">
+                <div class="trade-off-details">
+                  <div class="pros-cons">
+                    <div class="pros">
+                      <h6>✅ Advantages:</h6>
+                      <ul>
+                        ${tradeOff.pros.map(pro => `<li>${pro}</li>`).join('')}
+                      </ul>
+                    </div>
+                    <div class="cons">
+                      <h6>❌ Trade-offs:</h6>
+                      <ul>
+                        ${tradeOff.cons.map(con => `<li>${con}</li>`).join('')}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="impact">
+                    <h6>📊 Business Impact:</h6>
+                    <p><strong>${tradeOff.impact}</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+        
+        // Security features
+        const securityContainer = document.getElementById('security-features');
+        securityContainer.innerHTML = project.architecture.securityFeatures.map(feature => `
+          <li>${feature}</li>
+        `).join('');
+        
+        // Performance optimizations
+        const performanceContainer = document.getElementById('performance-optimizations');
+        performanceContainer.innerHTML = project.architecture.performanceOptimizations.map(optimization => `
+          <li>${optimization}</li>
+        `).join('');
+        
+        // Cost optimization
+        const costContainer = document.getElementById('cost-optimization');
+        if (project.architecture.costOptimization) {
+          costContainer.innerHTML = project.architecture.costOptimization.map(optimization => `
+            <li>${optimization}</li>
+          `).join('');
+        }
+      } else {
+        // Hide architecture section if no data available
+        document.getElementById('architecture-section').style.display = 'none';
+      }
+      
+      // Reinitialize Swiper after content is loaded
+      setTimeout(() => {
+        if (window.Swiper) {
+          const swiper = new Swiper('.portfolio-details-slider', {
+            loop: true,
+            speed: 600,
+            autoplay: {
+              delay: 5000
+            },
+            slidesPerView: 'auto',
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              clickable: true
+            }
+          });
+        }
+      }, 100);
+    });
+  </script>
+
+</body>
+
+</html>

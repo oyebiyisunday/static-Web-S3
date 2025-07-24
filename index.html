@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Sunday Oyebiyi | Cloud Engineer</title>
+  <meta name="description" content="Cloud Engineer specializing in AWS, DevOps automation, and scalable infrastructure solutions">
+  <meta name="keywords" content="Cloud Engineer, AWS, DevOps, Infrastructure, Automation, Sunday Oyebiyi">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Lightbox Styling -->
+  <style>
+    .project-details {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 25px;
+      border-radius: 10px;
+      border-left: 4px solid #007bff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 15px 0;
+      max-height: 70vh;
+      overflow-y: auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .project-details h4 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 8px;
+    }
+    
+    .project-details h5 {
+      color: #34495e;
+      margin: 20px 0 12px 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+      background: linear-gradient(90deg, #007bff, #0056b3);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+    }
+    
+    .project-details h5:after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: #007bff;
+    }
+    
+    .project-details p {
+      margin-bottom: 12px;
+      color: #555;
+      line-height: 1.7;
+      text-align: justify;
+    }
+    
+    .project-details strong {
+      color: #007bff;
+      font-weight: 600;
+    }
+    
+    .project-details hr {
+      margin: 20px 0;
+      border: none;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #007bff, transparent);
+    }
+    
+    .project-details ul {
+      margin: 15px 0;
+      padding-left: 0;
+    }
+    
+    .project-details li {
+      list-style: none;
+      margin: 10px 0;
+      padding: 8px 0 8px 25px;
+      position: relative;
+      color: #555;
+      background: rgba(0, 123, 255, 0.05);
+      border-radius: 5px;
+      padding-left: 35px;
+    }
+    
+    .project-details li:before {
+      content: "✓";
+      position: absolute;
+      left: 12px;
+      color: #28a745;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    
+    /* Custom scrollbar for project details */
+    .project-details::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+    .project-details::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 3px;
+    }
+    
+    .project-details::-webkit-scrollbar-thumb {
+      background: #007bff;
+      border-radius: 3px;
+    }
+    
+    .project-details::-webkit-scrollbar-thumb:hover {
+      background: #0056b3;
+    }
+    
+    /* Responsive adjustments for mobile */
+    @media (max-width: 768px) {
+      .project-details {
+        padding: 20px;
+        margin: 10px 0;
+        max-height: 60vh;
+        font-size: 0.95em;
+      }
+      
+      .project-details h4 {
+        font-size: 1.2rem;
+      }
+      
+      .project-details h5 {
+        font-size: 1rem;
+      }
+      
+      .project-details li {
+        padding-left: 30px;
+      }
+    }
+    
+    /* Certificate Cards Styling */
+    .certificate-card {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border-radius: 15px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 8px 25px rgba(0, 123, 255, 0.1);
+      border: 1px solid #e3f2fd;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .certificate-card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #007bff, #0056b3, #28a745);
+    }
+    
+    .certificate-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0, 123, 255, 0.2);
+      border-color: #007bff;
+    }
+    
+    .certificate-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .certificate-icon i {
+      font-size: 24px;
+      color: white;
+    }
+    
+    .certificate-content h4 {
+      color: #2c3e50;
+      margin-bottom: 8px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    
+    .certificate-provider {
+      color: #007bff;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-size: 0.95rem;
+    }
+    
+    .certificate-year {
+      color: #6c757d;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      font-weight: 400;
+    }
+    
+    .certificate-description {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+    
+    .certificate-actions .btn {
+      border-radius: 25px;
+      padding: 8px 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .credentials-cta {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 40px;
+      border-radius: 15px;
+      border: 2px dashed #007bff;
+      text-align: center;
+    }
+    
+    .credentials-cta h4 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    
+    .credentials-cta p {
+      color: #6c757d;
+      margin-bottom: 25px;
+      font-size: 1.05rem;
+    }
+    
+    .credentials-cta .btn {
+      border-radius: 25px;
+      padding: 12px 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jul 21 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#certifications"><i class="bi bi-award navicon"></i> Certifications</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
+
+      <div class="hero-content">
+
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>Sunday <span class="accent-text">Oyebiyi</span></h1>
+                <h2>Cloud Engineer (AWS) | Solution Architect</h2>
+                <p class="lead">I'm a <span class="typed" data-typed-items="Cloud Engineer, DevOps Specialist, AWS Architect, Infrastructure Automation Expert"></span></p>
+                <p class="description">Transforming ideas into scalable, secure cloud solutions with expertise in AWS, DevOps automation, and full-stack development. Passionate about building robust infrastructure that drives business success.</p>
+
+                <div class="hero-actions">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+
+                <div class="social-links">
+                  <a href="https://github.com/oyebiyisunday?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/sunday-oyebiyi/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                  <a href="mailto:oyebiyisunday@gmail.com"><i class="bi bi-envelope"></i></a>
+                  <a href="https://www.credly.com/badges/e1319a3e-069d-4e77-a970-de14176f064f/public_url" target="_blank" rel="noopener noreferrer"><i class="bi bi-award"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="Profile.png" alt="Sunday Oyebiyi" class="profile-image">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-image">
+                  <img src="Profile.png" alt="Profile Image" class="img-fluid">
+                </div>
+                <div class="profile-badge">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+              </div>
+
+              <div class="profile-content">
+                <h3>Sunday Oyebiyi</h3>
+                <p class="profession">Cloud Engineer &amp; Solution Architect</p>
+
+                <div class="contact-links">
+                  <a href="mailto:oyebiyisunday@gmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    oyebiyisunday@gmail.com
+                  </a>
+                  <a href="tel:+17797756831" class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    +1 (779) 775-6831
+                  </a>
+                  <a href="#" class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    Baltimore, MD
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-content">
+                <div class="section-header">
+                  <span class="badge-text">Get to Know Me</span>
+                  <h2>Passionate About Creating Cloud Solutions</h2>
+                </div>
+
+                <div class="description">
+                  <p>Cloud & Solutions Architect with 4+ years of experience designing, deploying, and optimizing scalable, secure, and cost‑efficient AWS solutions. Specializing in cloud‑native architectures, real‑time data streaming, infrastructure as code (Terraform), and enterprise governance. Proven track record reducing data latency by 50%, cutting cloud costs by 30%, and leading large‑scale migrations across banking and fintech sectors. Adept at translating complex business requirements into high‑availability designs with 99.9%+ SLA adherence.</p>
+
+                  <p>My mission is to bridge the gap between complex cloud technologies and business objectives, delivering solutions that drive innovation and operational excellence.</p>
+                </div>              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">4+</div>
+                  <div class="stat-label">Years in Cloud</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">50%</div>
+                  <div class="stat-label">Data Latency Reduction</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">30%</div>
+                  <div class="stat-label">Cost Reduction</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">99.9%</div>
+                  <div class="stat-label">System Uptime</div>
+                </div>
+              </div>
+
+                <div class="details-grid">
+                  <div class="detail-row">
+                    <div class="detail-item">
+                      <span class="detail-label">Specialization</span>
+                      <span class="detail-value">Cloud Architecture &amp; DevOps</span>
+                    </div>
+                    <div class="detail-item">
+                      <span class="detail-label">Industry Experience</span>
+                      <span class="detail-value">Banking &amp; Logistics</span>
+                    </div>
+                  </div>
+                  <div class="detail-row">
+                    <div class="detail-item">
+                      <span class="detail-label">Education</span>
+                      <span class="detail-value">MS Applied IT, Towson University</span>
+                    </div>
+                    <div class="detail-item">
+                      <span class="detail-label">Certifications</span>
+                      <span class="detail-value">AWS Cloud, Security, Well-Architected</span>
+                    </div>
+                  </div>
+                </div>              <div class="cta-section">
+                <a href="#certifications" class="btn btn-primary">
+                  <i class="bi bi-award"></i>
+                  View My Certifications
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="stats-wrapper">
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
+                <div class="icon-wrapper">
+                  <i class="bi bi-emoji-smile"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Agency Banking Clients</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-wrapper">
+                  <i class="bi bi-journal-richtext"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Projects Delivered</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
+                <div class="icon-wrapper">
+                  <i class="bi bi-database-check"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <p>System Implementations</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-wrapper">
+                  <i class="bi bi-people"></i>
+                </div>
+                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Team Members Mentored</p>
+              </div><!-- End Stats Item -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Comprehensive technical expertise spanning cloud architecture, DevOps automation, and modern development practices. Specialized in AWS services, containerization, and infrastructure management with proven results in enterprise environments.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Cloud & Infrastructure</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>AWS (EC2, S3, Lambda)</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Expert level knowledge of AWS cloud services and architecture</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Docker & Kubernetes</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Container orchestration and microservices deployment</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Terraform & IaC</h4>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Infrastructure as Code and automated provisioning</div>
+                </div>
+              </div>
+            </div><!-- End Cloud Skills -->
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>DevOps & Automation</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>CI/CD Pipelines</h4>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">GitLab CI/CD, Jenkins, and automated deployment workflows</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Python & Scripting</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Python automation, Bash scripting, and infrastructure tools</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Monitoring & Security</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">CloudWatch, ELK stack, security best practices and compliance</div>
+                </div>
+              </div>
+            </div><!-- End DevOps Skills -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Comprehensive overview of my professional journey in cloud engineering, showcasing expertise in AWS services, DevOps automation, and scalable infrastructure solutions that drive business success and digital transformation.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <!-- Left column with summary and contact -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+              <div class="profile-img mb-4">
+                <img src="Profile.png" alt="Profile" class="img-fluid rounded">
+              </div>
+
+              <h3>Professional Summary</h3>
+              <p>Cloud & Solutions Architect with 4+ years of experience designing, deploying, and optimizing scalable, secure, and cost‑efficient AWS solutions. Specializing in cloud‑native architectures, real‑time data streaming, infrastructure as code (Terraform), and enterprise governance. Proven track record reducing data latency by 50%, cutting cloud costs by 30%, and leading large‑scale migrations across banking and fintech sectors. Adept at translating complex business requirements into high‑availability designs with 99.9%+ SLA adherence.</p>
+
+              <h3 class="mt-4">Contact Information</h3>
+              <ul class="contact-info list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> Baltimore, Maryland, USA</li>
+                <li><i class="bi bi-envelope"></i> oyebiyisunday@gmail.com</li>
+                <li><i class="bi bi-phone"></i> +1 (779) 775-6831</li>
+                <li><i class="bi bi-linkedin"></i> linkedin.com/in/sunday-oyebiyi</li>
+              </ul>
+
+              <div class="skills-animation mt-4">
+                <h3>Technical Skills</h3>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Cloud Architecture</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>DevOps & Automation</span>
+                    <span>92%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>AWS Services</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Security & Compliance</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column with experience and education -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+            <!-- Experience Section -->
+            <div class="resume-section" data-aos="fade-up">
+              <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
+
+              <div class="resume-item">
+                <h4>Cloud & DevOps Architect</h4>
+                <h5>Jul 2024 - Present</h5>
+                <p class="company"><i class="bi bi-building"></i> Smooth Ace · Part-time</p>
+                <ul>
+                  <li>Designed and implemented scalable AWS cloud infrastructure solutions using EC2, S3, Lambda, VPC, and CloudFormation</li>
+                  <li>Automated CI/CD deployment pipelines with GitHub Actions and AWS CodePipeline reducing deployment time by 80%</li>
+                  <li>Led enterprise cloud migration initiatives for 5+ clients achieving 99.9% uptime and 30% cost reduction</li>
+                  <li>Architected Infrastructure as Code solutions using Terraform and implemented security best practices with IAM policies</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Full-Stack Developer Intern</h4>
+                <h5>Jun 2021 - Dec 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Express WebDev Solutions · Part-time Remote · Lanzarote, Spain</p>
+                <ul>
+                  <li>Architected and developed end-to-end logistics tracking web applications using React.js, Node.js, and Express.js frameworks</li>
+                  <li>Integrated RESTful APIs with SAP ERP systems and warehouse management platforms using Express.js middleware and authentication</li>
+                  <li>Optimized database queries and API performance reducing page load times by 45% using MongoDB and Redis caching</li>
+                  <li>Mentored 3 junior developers in React best practices, Express.js routing, and maintained 95% test coverage using Jest and Cypress</li>
+                </ul>
+              </div>
+
+              <div class="resume-item">
+                <h4>Data Engineer and Solution Lead (Agency Banking)</h4>
+                <h5>Sep 2018 - Aug 2021</h5>
+                <p class="company"><i class="bi bi-building"></i> First Bank of Nigeria Ltd. · Full-time</p>
+                <ul>
+                  <li>Led agency banking digital transformation initiatives serving 232+ clients across Nigeria's financial ecosystem</li>
+                  <li>Designed and implemented real-time data processing systems reducing transaction latency by 50% using Apache Kafka</li>
+                  <li>Managed cross-functional teams of 15+ engineers and delivered 85+ successful projects within budget and timeline</li>
+                  <li>Optimized database performance with SQL Server and Oracle, implemented data governance frameworks ensuring regulatory compliance</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+
+              <div class="resume-item">
+                <h4>Master of Science in Applied Information Technology</h4>
+                <h5>2024 - 2025</h5>
+                <p class="company"><i class="bi bi-building"></i> Towson University, Baltimore, Maryland, USA.</p>
+                <p>Major: Internet Applications and Database Management Systems.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>Master of Science - MS, Logistics Management</h4>
+                <h5>Feb 2021 - May 2023</h5>
+                <p class="company"><i class="bi bi-building"></i> Czestochowa University of Technology</p>
+                <p>Skills: Management Information Systems (MIS) · Operations Management · Digital Supply Chain · SAP Implementation</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>Bachelor of Science in Management</h4>
+                <h5>2013 - 2018</h5>
+                <p class="company"><i class="bi bi-building"></i> Joseph Ayo Babalola University</p>
+                <p>Ikeji, Nigeria.</p>
+              </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
+              <h3><i class="bi bi-award me-2"></i>Certifications</h3>
+
+              <div class="resume-item">
+                <h4>AWS Cloud Computing Essentials</h4>
+                <h5>2025</h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>AWS Bedrock with Python</h4>
+                <h5>2025</h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>AWS Well-Architected Proficient</h4>
+                <h5>2025</h5>
+              </div>
+
+              <div class="resume-item">
+                <h4>Information Security and Assurance Graduate Certificate</h4>
+                <h5>2025</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Professional Certifications</h2>
+        <p>Industry-recognized certifications demonstrating expertise in AWS cloud technologies, security frameworks, and advanced information systems. These credentials validate hands-on experience in designing, implementing, and managing enterprise-grade cloud solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          
+          <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <div class="certificate-content">
+                <h4>AWS Well-Architected Foundations</h4>
+                <p class="certificate-provider">Amazon Web Services</p>
+                <p class="certificate-year">2025</p>
+                <p class="certificate-description">Mastery of AWS Well-Architected Framework pillars: operational excellence, security, reliability, performance efficiency, and cost optimization.</p>
+                <div class="certificate-actions">
+                  <a href="Certificates/AWS_Well_Architected_Foundations.pdf" target="_blank" class="btn btn-sm btn-primary">
+                    <i class="bi bi-file-pdf"></i> View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <i class="bi bi-cloud-check"></i>
+              </div>
+              <div class="certificate-content">
+                <h4>AWS Cloud Computing Essentials</h4>
+                <p class="certificate-provider">Amazon Web Services</p>
+                <p class="certificate-year">2025</p>
+                <p class="certificate-description">Comprehensive understanding of AWS core services, cloud computing fundamentals, and best practices for scalable infrastructure deployment.</p>
+                <div class="certificate-actions">
+                  <a href="Certificates/AWS Cloud Essential.pdf" target="_blank" class="btn btn-sm btn-primary">
+                    <i class="bi bi-file-pdf"></i> View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <i class="bi bi-mortarboard"></i>
+              </div>
+              <div class="certificate-content">
+                <h4>Information Security and Assurance Graduate Certificate</h4>
+                <p class="certificate-provider">Towson University</p>
+                <p class="certificate-year">2025</p>
+                <p class="certificate-description">Advanced graduate-level certification in cybersecurity, risk management, and information assurance for enterprise environments.</p>
+                <div class="certificate-actions">
+                  <a href="#" class="btn btn-sm btn-outline" disabled>
+                    <i class="bi bi-hourglass-split"></i> In Progress
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="certificate-card">
+              <div class="certificate-icon">
+                <i class="bi bi-robot"></i>
+              </div>
+              <div class="certificate-content">
+                <h4>AWS Bedrock with Python</h4>
+                <p class="certificate-provider">Amazon Web Services</p>
+                <p class="certificate-year">2025</p>
+                <p class="certificate-description">Advanced AI/ML implementation using AWS Bedrock, demonstrating proficiency in generative AI and machine learning integration with Python.</p>
+                <div class="certificate-actions">
+                  <a href="Certificates/AWS_Bedrock_With_Python.pdf" target="_blank" class="btn btn-sm btn-primary">
+                    <i class="bi bi-file-pdf"></i> View Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="500">
+            <div class="credentials-cta">
+              <h4>Digital Badges & Credentials</h4>
+              <p>View my complete collection of professional badges and verified credentials on Credly</p>
+              <a href="https://www.credly.com/badges/e1319a3e-069d-4e77-a970-de14176f064f/public_url" target="_blank" class="btn btn-primary btn-lg">
+                <i class="bi bi-award"></i> View All Badges on Credly
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Certifications Section -->
+
+    <!-- Application Development Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Cloud Projects</h2>
+        <p>Showcasing expertise in React development, WordPress solutions, and database design. Each project demonstrates practical implementation of modern web technologies and best practices in scalable, secure application development.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row">
+            <div class="col-lg-3 filter-sidebar">
+              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <ul class="portfolio-filters isotope-filters">
+                  <li data-filter="*" class="filter-active">Projects Gallery</li>
+                  <li data-filter=".filter-react"><a href="react-portfolio-details.html">React Deployement on AWS</a></li>
+                  <li data-filter=".filter-wordpress"><a href="wordpress-portfolio-details.html">WordPress Deployment on AWS</a></li>
+                  <li data-filter=".filter-database"><a href="database-portfolio-details.html">Database Design</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-react">
+                  <div class="portfolio-wrap">
+                    <img src="Projects/react_deployemnt/React Main.png" class="img-fluid" alt="React Development Projects" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">React Development</span>
+                        <h4><a href="react-portfolio-details.html">React Projects Portfolio</a></h4>
+                        <div class="portfolio-links">
+                          <a href="Projects/react_deployemnt/React Main.png" class="glightbox" data-gallery="react-gallery" title="React Main Dashboard" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p><hr><h5>Project Challenge</h5><p>Deploy a scalable React application with global performance, automated CI/CD pipeline, and cost-effective hosting while ensuring security and high availability.</p><h5>Trade-off Analysis</h5><p><strong>S3 Static Hosting:</strong> Chosen for cost-effectiveness and simplicity over EC2 instances. Trade-off: Limited to static content but perfect for React SPAs.<br><strong>CloudFront CDN:</strong> Global edge locations for performance vs. cost. Benefit: 40% faster load times globally.<br><strong>Route 53:</strong> AWS-native DNS vs. third-party providers. Advantage: Seamless integration and health checks.</p><h5>Solution</h5><p>Implemented serverless architecture using S3 for hosting, CloudFront for global content delivery, Route 53 for DNS management, and GitHub Actions for automated deployment pipeline.</p><h5>Impact</h5><p>• 40% improvement in global load times<br>• 60% reduction in hosting costs vs. traditional servers<br>• 99.9% uptime with automated scaling<br>• Zero-downtime deployments with CI/CD automation</p></div>">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="Projects/react_deployemnt/react1.png" class="glightbox d-none" data-gallery="react-gallery" title="React E-Commerce Platform" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react2.png" class="glightbox d-none" data-gallery="react-gallery" title="React Component Library" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react3.png" class="glightbox d-none" data-gallery="react-gallery" title="React Task Management" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react4.png" class="glightbox d-none" data-gallery="react-gallery" title="React Analytics Dashboard" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react5.png" class="glightbox d-none" data-gallery="react-gallery" title="React Social Media App" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react6.png" class="glightbox d-none" data-gallery="react-gallery" title="React Portfolio Website" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react7.png" class="glightbox d-none" data-gallery="react-gallery" title="React Real-time Chat" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react8.png" class="glightbox d-none" data-gallery="react-gallery" title="React Data Visualization" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react10.png" class="glightbox d-none" data-gallery="react-gallery" title="React Shopping Cart" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react11.png" class="glightbox d-none" data-gallery="react-gallery" title="React Authentication System" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react12.png" class="glightbox d-none" data-gallery="react-gallery" title="React File Manager" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react13.png" class="glightbox d-none" data-gallery="react-gallery" title="React Calendar App" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react14.png" class="glightbox d-none" data-gallery="react-gallery" title="React Weather Widget" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react15.png" class="glightbox d-none" data-gallery="react-gallery" title="React Media Player" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react16.png" class="glightbox d-none" data-gallery="react-gallery" title="React Form Builder" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react17.png" class="glightbox d-none" data-gallery="react-gallery" title="React Code Editor" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react18.png" class="glightbox d-none" data-gallery="react-gallery" title="React Image Gallery" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react19.png" class="glightbox d-none" data-gallery="react-gallery" title="React Blog System" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react20.png" class="glightbox d-none" data-gallery="react-gallery" title="React Dashboard Charts" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react23.png" class="glightbox d-none" data-gallery="react-gallery" title="React Todo Application" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react24.png" class="glightbox d-none" data-gallery="react-gallery" title="React News Reader" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react25.png" class="glightbox d-none" data-gallery="react-gallery" title="React Movie Database" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react26.png" class="glightbox d-none" data-gallery="react-gallery" title="React Recipe App" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react28.png" class="glightbox d-none" data-gallery="react-gallery" title="React PWA Application" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="react-portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-wordpress">
+                  <div class="portfolio-wrap">
+                    <a href="wordpress-portfolio-details.html">
+                      <img src="Projects/WordPress Deployement/wp1.png" class="img-fluid" alt="WordPress Development Projects" loading="lazy">
+                    </a>
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">WordPress Solutions</span>
+                        <h4><a href="wordpress-portfolio-details.html">WordPress Projects Portfolio</a></h4>
+                        <div class="portfolio-links">
+                          <a href="Projects/WordPress Deployement/wp1.png" class="glightbox" data-gallery="wordpress-gallery" title="WordPress Main Dashboard" data-description="<div class='project-details'><h4>WordPress AWS Deployment</h4><p><strong>Technologies:</strong> WordPress, Linux, EC2, RDS MySQL, CloudFormation, ALB</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="Projects/react_deployemnt/react1.png" class="glightbox d-none" data-gallery="react-gallery" title="React E-Commerce Platform" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react2.png" class="glightbox d-none" data-gallery="react-gallery" title="React Component Library" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react3.png" class="glightbox d-none" data-gallery="react-gallery" title="React Task Management" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react4.png" class="glightbox d-none" data-gallery="react-gallery" title="React Analytics Dashboard" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react5.png" class="glightbox d-none" data-gallery="react-gallery" title="React Social Media App" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react6.png" class="glightbox d-none" data-gallery="react-gallery" title="React Portfolio Website" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react7.png" class="glightbox d-none" data-gallery="react-gallery" title="React Real-time Chat" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react8.png" class="glightbox d-none" data-gallery="react-gallery" title="React Data Visualization" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react10.png" class="glightbox d-none" data-gallery="react-gallery" title="React Shopping Cart" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react11.png" class="glightbox d-none" data-gallery="react-gallery" title="React Authentication System" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react12.png" class="glightbox d-none" data-gallery="react-gallery" title="React File Manager" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react13.png" class="glightbox d-none" data-gallery="react-gallery" title="React Calendar App" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react14.png" class="glightbox d-none" data-gallery="react-gallery" title="React Weather Widget" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react15.png" class="glightbox d-none" data-gallery="react-gallery" title="React Media Player" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react16.png" class="glightbox d-none" data-gallery="react-gallery" title="React Form Builder" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react17.png" class="glightbox d-none" data-gallery="react-gallery" title="React Code Editor" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react18.png" class="glightbox d-none" data-gallery="react-gallery" title="React Image Gallery" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react19.png" class="glightbox d-none" data-gallery="react-gallery" title="React Blog System" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react20.png" class="glightbox d-none" data-gallery="react-gallery" title="React Dashboard Charts" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react23.png" class="glightbox d-none" data-gallery="react-gallery" title="React Todo Application" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react24.png" class="glightbox d-none" data-gallery="react-gallery" title="React News Reader" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react25.png" class="glightbox d-none" data-gallery="react-gallery" title="React Movie Database" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react26.png" class="glightbox d-none" data-gallery="react-gallery" title="React Recipe App" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/react_deployemnt/react28.png" class="glightbox d-none" data-gallery="react-gallery" title="React PWA Application" data-description="<div class='project-details'><h4>React AWS Deployment</h4><p><strong>Technologies:</strong> React.js, AWS S3, CloudFront, Route 53, CI/CD</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="react-portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-wordpress">
+                  <div class="portfolio-wrap">
+                    <a href="wordpress-portfolio-details.html">
+                      <img src="Projects/WordPress Deployement/wp1.png" class="img-fluid" alt="WordPress Development Projects" loading="lazy">
+                    </a>
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">WordPress Solutions</span>
+                        <h4><a href="wordpress-portfolio-details.html">WordPress Projects Portfolio</a></h4>
+                        <div class="portfolio-links">
+                          <a href="Projects/WordPress Deployement/wp1.png" class="glightbox" data-gallery="wordpress-gallery" title="WordPress Main Dashboard" data-description="<div class='project-details'><h4>WordPress AWS Deployment</h4><p><strong>Technologies:</strong> WordPress, Linux, EC2, RDS MySQL, CloudFormation, ALB</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="Projects/WordPress Deployement/wp2.png" class="glightbox d-none" data-gallery="wordpress-gallery" title="WordPress Corporate Website" data-description="<div class='project-details'><h4>WordPress AWS Deployment</h4><p><strong>Technologies:</strong> WordPress, Linux, EC2, RDS MySQL, CloudFormation, ALB</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/WordPress Deployement/wp3.png" class="glightbox d-none" data-gallery="wordpress-gallery" title="WordPress E-Commerce Store" data-description="<div class='project-details'><h4>WordPress AWS Deployment</h4><p><strong>Technologies:</strong> WordPress, Linux, EC2, RDS MySQL, CloudFormation, ALB</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/WordPress Deployement/wp4.png" class="glightbox d-none" data-gallery="wordpress-gallery" title="WordPress Blog Platform" data-description="<div class='project-details'><h4>WordPress AWS Deployment</h4><p><strong>Technologies:</strong> WordPress, Linux, EC2, RDS MySQL, CloudFormation, ALB</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/WordPress Deployement/wp5.png" class="glightbox d-none" data-gallery="wordpress-gallery" title="WordPress Business Directory" data-description="<div class='project-details'><h4>WordPress AWS Deployment</h4><p><strong>Technologies:</strong> WordPress, Linux, EC2, RDS MySQL, CloudFormation, ALB</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/WordPress Deployement/wp6.png" class="glightbox d-none" data-gallery="wordpress-gallery" title="WordPress Portfolio Site" data-description="<div class='project-details'><h4>WordPress AWS Deployment</h4><p><strong>Technologies:</strong> WordPress, Linux, EC2, RDS MySQL, CloudFormation, ALB</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/WordPress Deployement/wp7.png" class="glightbox d-none" data-gallery="wordpress-gallery" title="WordPress Custom Theme" data-description="<div class='project-details'><h4>WordPress AWS Deployment</h4><p><strong>Technologies:</strong> WordPress, Linux, EC2, RDS MySQL, CloudFormation, ALB</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="Projects/WordPress Deployement/wp8.png" class="glightbox d-none" data-gallery="wordpress-gallery" title="WordPress Plugin Development" data-description="<div class='project-details'><h4>WordPress AWS Deployment</h4><p><strong>Technologies:</strong> WordPress, Linux, EC2, RDS MySQL, CloudFormation, ALB</p><p><strong>Platform:</strong> AWS Cloud Infrastructure</p><p><strong>Status:</strong> Deployed to Production</p></div>"></a>
+                          <a href="wordpress-portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-database">
+                  <div class="portfolio-wrap">
+                    <img src="Projects/Database Design/DB main.png" class="img-fluid" alt="Database Design Projects" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Database Design</span>
+                        <h4><a href="database-portfolio-details.html">Database Projects Portfolio</a></h4>
+                        <div class="portfolio-links">
+                          <a href="Projects/Database Design/DB main.png" class="glightbox" data-gallery="database-gallery" title="Database Main Dashboard" data-description="<div class='project-details'><h4>Database Design & Architecture</h4><p><strong>Technologies:</strong> MySQL, MongoDB, ERD Design, UML Modeling</p><p><strong>Platform:</strong> Lucidchart, MySQL Workbench, APEX</p><p><strong>Status:</strong> Expertise Demonstration</p></div>">
+                            <i class="bi bi-plus-lg"></i>
+                          </a>
+                          <a href="Projects/Database Design/DB2.png" class="glightbox d-none" data-gallery="database-gallery" title="Database Design Interface" data-description="<div class='project-details'><h4>Database Design & Architecture</h4><p><strong>Technologies:</strong> MySQL, MongoDB, ERD Design, UML Modeling</p><p><strong>Platform:</strong> Lucidchart, MySQL Workbench, APEX</p><p><strong>Status:</strong> Expertise Demonstration</p></div>"></a>
+                          <a href="Projects/Database Design/DB3.png" class="glightbox d-none" data-gallery="database-gallery" title="Database Schema Design" data-description="<div class='project-details'><h4>Database Design & Architecture</h4><p><strong>Technologies:</strong> MySQL, MongoDB, ERD Design, UML Modeling</p><p><strong>Platform:</strong> Lucidchart, MySQL Workbench, APEX</p><p><strong>Status:</strong> Expertise Demonstration</p></div>"></a>
+                          <a href="Projects/Database Design/DB4.png" class="glightbox d-none" data-gallery="database-gallery" title="Database Management System" data-description="<div class='project-details'><h4>Database Design & Architecture</h4><p><strong>Technologies:</strong> MySQL, MongoDB, ERD Design, UML Modeling</p><p><strong>Platform:</strong> Lucidchart, MySQL Workbench, APEX</p><p><strong>Status:</strong> Expertise Demonstration</p></div>"></a>
+                          <a href="Projects/Database Design/Hotel UML.png" class="glightbox d-none" data-gallery="database-gallery" title="Hotel UML Diagram" data-description="<div class='project-details'><h4>Database Design & Architecture</h4><p><strong>Technologies:</strong> MySQL, MongoDB, ERD Design, UML Modeling</p><p><strong>Platform:</strong> Lucidchart, MySQL Workbench, APEX</p><p><strong>Status:</strong> Expertise Demonstration</p></div>"></a>
+                          <a href="Projects/Database Design/Voting UML.png" class="glightbox d-none" data-gallery="database-gallery" title="Voting UML Diagram" data-description="<div class='project-details'><h4>Database Design & Architecture</h4><p><strong>Technologies:</strong> MySQL, MongoDB, ERD Design, UML Modeling</p><p><strong>Platform:</strong> Lucidchart, MySQL Workbench, APEX</p><p><strong>Status:</strong> Expertise Demonstration</p></div>"></a>
+                          <a href="database-portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+              </div><!-- End Portfolio Container -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Application Development Portfolio Section -->
+
+    <!-- Cloud Infrastructure Tools Section -->
+    <section id="cloud-tools" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Cloud Infrastructure & Tools</h2>
+        <p>Comprehensive hands-on experience with AWS services and cloud infrastructure tools. These projects showcase practical implementation and real-world usage across AWS CLI automation, S3 storage management, infrastructure provisioning, security configurations, serverless computing, database operations, networking, cost optimization, backup strategies, and CI/CD pipeline integration in production environments.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="Tools/aws_cli/cli1.png" class="img-fluid" alt="AWS CLI Usage" loading="lazy">
+              <div class="portfolio-info">
+                <div class="content">
+                  <span class="category">AWS CLI</span>
+                  <h4>Command Line Interface</h4>
+                  <div class="portfolio-links">
+                    <a href="Tools/aws_cli/cli1.png" class="glightbox" title="AWS CLI Usage"><i class="bi bi-plus-lg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="Tools/S3_Bucket/S3_2.png" class="img-fluid" alt="S3 Bucket Management" loading="lazy">
+              <div class="portfolio-info">
+                <div class="content">
+                  <span class="category">Amazon S3</span>
+                  <h4>S3 Bucket Management</h4>
+                  <div class="portfolio-links">
+                    <a href="Tools/S3_Bucket/S3_2.png" class="glightbox" title="S3 Bucket Management"><i class="bi bi-plus-lg"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="Tools/S3_Bucket/S3_4.png" class="img-fluid" alt="S3 Configuration" loading="lazy">
+              <div class="portfolio-info">
+                <div class="content">
+                  <span class="category">Amazon S3</span>
+                  <h4>S3 Security & Configuration</h4>
+                  <div class="portfolio-links">
+                    <a href="Tools/S3_Bucket/S3_4.png" class="glightbox" title="S3 Configuration"><i class="bi bi-plus-lg"></i></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="Tools/aws_cli/cli6.png" class="img-fluid" alt="S3 Cross-Region Replication" loading="lazy">
+              <div class="portfolio-info">
+                <div class="content">
+                  <span class="category">AWS CLI</span>
+                  <h4>S3 Cross-Region Replication</h4>
+                  <div class="portfolio-links">
+                    <a href="Tools/aws_cli/cli6.png" class="glightbox" title="S3 Cross-Region Replication"><i class="bi bi-plus-lg"></i></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+
+        </div><!-- End Portfolio Container -->
+
+      </div>
+
+    </section><!-- /Cloud Infrastructure Tools Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Comprehensive cloud engineering services leveraging AWS technologies to deliver scalable, secure, and cost-effective solutions for modern enterprises</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="service-header">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+              <div class="service-intro">
+                <h2 class="service-heading">
+                  <div>AWS-powered cloud</div>
+                  <div><span>engineering solutions</span></div>
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="service-summary">
+                <p>
+                  Delivering enterprise-grade cloud architecture, DevOps automation, and scalable infrastructure solutions using cutting-edge AWS services to accelerate digital transformation and drive business growth.
+                </p>
+                <a href="https://aws.amazon.com/products/?ams%23interactive-card-vertical%23pattern-data-1210708883.filter=%257B%2522filters%2522%253A%255B%255D%257D" class="service-btn" target="_blank" rel="noopener noreferrer">
+                  View All AWS Services
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-cloud"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Cloud <span>Architecture</span>
+                </a>
+              </h3>
+              <p>
+                Design and implement scalable AWS cloud architectures using EC2, S3, Lambda, VPC, RDS, and CloudFormation. Expert in multi-tier applications, auto-scaling, high-availability designs with 99.9% uptime, and Infrastructure as Code deployment strategies.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-gear-fill"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  DevOps <span>Automation</span>
+                </a>
+              </h3>
+              <p>
+                CI/CD pipeline implementation using GitHub Actions, Jenkins, AWS CodePipeline, and CodeDeploy. Infrastructure as Code with Terraform and CloudFormation, reducing deployment time by 80% and ensuring consistent, repeatable environments across development, staging, and production.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Data <span>Engineering</span>
+                </a>
+              </h3>
+              <p>
+                Big data solutions using AWS Glue, Redshift, S3, Kinesis, and DynamoDB. Real-time data streaming, ETL pipeline optimization, processing 2TB+ daily. Advanced query optimization and data warehouse design reducing latency by 50% and improving analytical performance.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Security & <span>Compliance</span>
+                </a>
+              </h3>
+              <p>
+                AWS security best practices implementation including IAM policies, VPC security groups, encryption at rest and in transit, AWS WAF, and CloudTrail monitoring. SOC 2 and PCI DSS compliance frameworks with comprehensive security auditing, vulnerability management, and automated security scanning.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-boxes"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Container <span>Orchestration</span>
+                </a>
+              </h3>
+              <p>
+                Kubernetes and Docker expertise with AWS EKS deployment, ECR container registry, and ECS orchestration. Microservices architecture, container security scanning, automated scaling policies, Helm charts, and service mesh implementation for production workloads with zero-downtime deployments.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+                <i class="bi bi-arrow-up-right"></i>
+              </a>
+              <h3>
+                <a href="service-details.html">
+                  Cost <span>Optimization</span>
+                </a>
+              </h3>
+              <p>
+                AWS cost management strategies including Reserved Instances, Spot Instances, resource right-sizing, AWS Cost Explorer, and Trusted Advisor optimization. Cloud financial management with automated scaling policies, achieving 30% cost reduction while maintaining performance, reliability, and security standards.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Client feedback and professional endorsements highlighting successful cloud infrastructure projects, DevOps implementations, and technical leadership that delivered measurable business results and operational excellence.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="testimonial-masonry">
+
+          <div class="testimonial-item" data-aos="fade-up">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Sunday's cloud migration strategy transformed our legacy banking systems to AWS, reducing operational costs by 30% while maintaining 99.9% uptime for critical financial transactions.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-f-7.webp" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Rachel Bennett</h3>
+                  <span class="position">Head of Digital Banking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Working with Sunday at Smooth Ace has been transformative. His expertise in containerizing our microservices on EKS reduced our deployment time from days to under 2 hours, revolutionizing our development workflow.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-m-7.webp" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Marcus Johnson</h3>
+                  <span class="position">CTO, Tech Startup</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Sunday's consulting through Smooth Ace helped us implement Terraform IaC solutions that cut our AWS environment setup time by 80%. His expertise in cloud automation is unmatched.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-f-8.webp" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Aisha Williams</h3>
+                  <span class="position">Infrastructure Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Sunday's expertise in AWS Redshift optimization tripled our query performance for regulatory reporting, ensuring compliance deadlines are consistently met with room to spare.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-m-8.webp" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Christopher Lee</h3>
+                  <span class="position">Compliance Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item highlight" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>The Smooth Ace team, led by Sunday, delivered exceptional cloud consulting services. Their GitHub Actions CI/CD implementation reduced our monthly AWS spend by 30% through automated scaling and spot instance optimization.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-f-9.webp" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Kenya Thompson</h3>
+                  <span class="position">VP of Engineering</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="testimonial-content">
+              <div class="quote-pattern">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>As a consulting partner, Smooth Ace and Sunday provided outstanding data engineering solutions. Processing 2TB+ daily transactions with 50% reduced latency has significantly improved our real-time analytics capabilities.</p>
+              <div class="client-info">
+                <div class="client-image">
+                  <img src="assets/img/person/person-m-13.webp" alt="Client">
+                </div>
+                <div class="client-details">
+                  <h3>Jamal Brooks</h3>
+                  <span class="position">Data Analytics Lead</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Ready to collaborate on cloud infrastructure projects and help organizations modernize their technology stack.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-6">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+              <p>Ready to discuss cloud infrastructure projects, collaborations, or job opportunities. Let's connect!</p>
+
+              <div class="contact-methods">
+                <div class="row g-3">
+                  <div class="col-md-12">
+                    <div class="contact-method-item text-center">
+                      <div class="contact-icon">
+                        <i class="bi bi-envelope"></i>
+                      </div>
+                      <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>oyebiyisunday@gmail.com</p>
+                        <a href="mailto:oyebiyisunday@gmail.com" class="btn btn-outline">Send Email</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="contact-method-item text-center">
+                      <div class="contact-icon">
+                        <i class="bi bi-telephone"></i>
+                      </div>
+                      <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>+1 (779) 775-6831</p>
+                        <a href="tel:+17797756831" class="btn btn-outline">Call Now</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="contact-method-item text-center">
+                      <div class="contact-icon">
+                        <i class="bi bi-linkedin"></i>
+                      </div>
+                      <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <p>Connect professionally</p>
+                        <a href="https://www.linkedin.com/in/sunday-oyebiyi/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <h3>Send a Message</h3>
+              <p class="mb-4">Have a question or want to discuss a project? Fill out the form below.</p>
+              
+              <!-- Success Message (initially hidden) -->
+              <div id="form-success-message" class="alert alert-success border-0 shadow-sm" style="display: none; background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white;" role="alert">
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check-circle-fill me-2 fs-4"></i>
+                  <h5 class="mb-0 text-white">Thanks for your message!</h5>
+                </div>
+                <p class="mb-0 text-white-50">For a quicker response, please use the <strong class="text-white">email</strong>, <strong class="text-white">phone</strong>, or <strong class="text-white">LinkedIn</strong> options on the left. I'll get back to you faster through those channels!</p>
+              </div>
+
+              <form id="contact-form" class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="contact-name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="contact-name" name="name" required>
+                  <div class="invalid-feedback">
+                    Please provide your name.
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="contact-email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" id="contact-email" name="email" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid email address.
+                  </div>
+                </div>
+                
+                <div class="col-12">
+                  <label for="contact-subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="contact-subject" name="subject" required>
+                  <div class="invalid-feedback">
+                    Please provide a subject.
+                  </div>
+                </div>
+                
+                <div class="col-12">
+                  <label for="contact-message" class="form-label">Message</label>
+                  <textarea class="form-control" id="contact-message" name="message" rows="5" required placeholder="Tell me about your project or inquiry..."></textarea>
+                  <div class="invalid-feedback">
+                    Please provide your message.
+                  </div>
+                </div>
+                
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-send"></i> Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sunday Oyebiyi</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed with <i class="bi bi-heart-fill text-danger"></i> <a href="https://bootstrapmade.com/">Love</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Contact Form Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const contactForm = document.getElementById('contact-form');
+      const successMessage = document.getElementById('form-success-message');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          // Check form validity
+          if (contactForm.checkValidity()) {
+            // Hide the form
+            contactForm.style.display = 'none';
+            
+            // Show success message
+            successMessage.style.display = 'block';
+            
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Optional: Reset form after a delay
+            setTimeout(function() {
+              contactForm.reset();
+              contactForm.classList.remove('was-validated');
+            }, 1000);
+            
+          } else {
+            // Add validation classes
+            contactForm.classList.add('was-validated');
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
