@@ -1,9 +1,5 @@
-name: Upload Website
-
-on:
-  push:
-    branches:
-      - main
+name: deploy to s3
+on: push
 
 jobs:
   deploy:
