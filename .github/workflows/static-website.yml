@@ -1,6 +1,6 @@
 name: deploy to s3
 
-on: push
+on:
   push:
     branches:
       - main
@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout source code from repo
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
 
       - name: Sync files to S3
         uses: jakejarvis/s3-sync-action@master
